@@ -11,7 +11,6 @@ public class Main {
         double fuel95price = 67.33;
         int maxAmount = 400;
 
-
         double fuelPrice = 0 ;
         if (fuelType == 92) {
             fuelPrice = fuel92price;
