@@ -29,7 +29,7 @@ public class Main {
         if (appleCount > 5 ) {
             System.out.println("Apple Juice");
         } else {
-            System.out.println("Недостаточно ингредиентов для Apple Juice :(");
+            System.out.println("РќРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РёРЅРіСЂРµРґРёРµРЅС‚РѕРІ РґР»СЏ Apple Juice :(");
         }
 
         //powder - 400 g, sugar - 10 g, milk - 1 l, oil - 30 ml
@@ -39,7 +39,7 @@ public class Main {
                 oilAmount >= pancakesOilRequired) {
             System.out.println("Pancakes");
         } else {
-            System.out.println("Недостаточно ингредиентов для Pancakes :(");
+            System.out.println("РќРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РёРЅРіСЂРµРґРёРµРЅС‚РѕРІ РґР»СЏ Pancakes :(");
         }
 
         //milk - 300 ml, powder - 5 g, eggs - 5
@@ -48,7 +48,7 @@ public class Main {
                 eggsCount >= omeletteEggsRequired) {
             System.out.println("Omelette");
         } else {
-            System.out.println("Недостаточно ингредиентов для Omelette :(");
+            System.out.println("РќРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РёРЅРіСЂРµРґРёРµРЅС‚РѕРІ РґР»СЏ Omelette :(");
         }
 
         //apples - 3, milk - 100 ml, powder - 300 g, eggs - 4
@@ -58,7 +58,7 @@ public class Main {
                 powderAmount >= applePiePowderRequired) {
             System.out.println("Apple pie");
         } else {
-            System.out.println("Недостаточно ингредиентов для Apple Pie :(");
+            System.out.println("РќРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РёРЅРіСЂРµРґРёРµРЅС‚РѕРІ РґР»СЏ Apple Pie :(");
         }
     }
 }
