@@ -54,7 +54,8 @@ public class Main {
         //apples - 3, milk - 100 ml, powder - 300 g, eggs - 4
         if (appleCount >= applePieApplesRequired &&
                 milkAmount >= applePieMilkRequired &&
-                eggsCount >= applePieEggsRequired) {
+                eggsCount >= applePieEggsRequired &&
+                powderAmount >= applePiePowderRequired) {
             System.out.println("Apple pie");
         } else {
             System.out.println("Недостаточно ингредиентов для Apple Pie :(");
