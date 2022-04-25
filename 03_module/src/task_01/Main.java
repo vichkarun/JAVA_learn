@@ -4,25 +4,15 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int firstValue = 1;
-        int lastValue = 12;
-        int factorial = 1;
 
+        int result = 1;
 
-        System.out.println("Введите число");
-
-
+        System.out.println("������� �����");
         int value = new Scanner(System.in).nextInt();
 
-        for (value = 1; value <= 12; value = value - 1) {
-            factorial  *= value;
-
+        for (int i = 1; i <= value; i = i + 1) {
+                result = result * i;
         }
-        System.out.println("Факториал равен:" + factorial);
-
-        }
-
+        System.out.println(value + "! = " + result);
     }
-
-
-
+}
