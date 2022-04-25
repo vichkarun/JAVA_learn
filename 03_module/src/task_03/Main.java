@@ -11,8 +11,8 @@ public class Main {
         int fillingTime = 1;
 
         while (currentVolume != volume) {
-            if (currentVolume == (volume + fillingSpeed - devastationSpeed));
-            System.out.println("Количество литров воды в бассейне в 1 итерации = " + currentVolume);
+            if (currentVolume == currentVolume + fillingSpeed - devastationSpeed);
+            System.out.println("РљРѕР»РёС‡РµСЃС‚РІРѕ Р»РёС‚СЂРѕРІ РІРѕРґС‹ РІ Р±Р°СЃСЃРµР№РЅРµ РІ 1 РёС‚РµСЂР°С†РёРё = " + currentVolume);
         }
 
 
