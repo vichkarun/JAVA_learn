@@ -8,14 +8,15 @@ public class SwimmingPool {
         int fillingSpeed = 30; //30 litres per minute
         int devastationSpeed = 10; //10 litres per minute
         int currentVolume = 0;
-        int fillingTime = 1;
+        int fillingTime = 0;
 
         while (currentVolume != volume) {
-            if (currentVolume == currentVolume + fillingSpeed - devastationSpeed);
-            System.out.println(" = " + currentVolume);
+            currentVolume = currentVolume + fillingSpeed - devastationSpeed;
+            fillingTime++;
+            System.out.println(currentVolume);
         }
 
-
+        System.out.println("Время наполнения бассейна: " + fillingTime + " минут");
 
     }
 }
