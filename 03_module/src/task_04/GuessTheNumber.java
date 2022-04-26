@@ -9,17 +9,17 @@ public class GuessTheNumber {
         int value = new Random().nextInt(100);
 
         while (true) {
-            System.out.println("Введите число");
+            System.out.println("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ");
             int attempt = new Scanner(System.in).nextInt();
 
             if (attempt == value) {
-                System.out.println("Вы угадали!");
+                System.out.println("Р’С‹ СѓРіР°РґР°Р»Рё!");
                 break;
             } else if (attempt < value) {
-                System.out.println("Загаданное число больше");
+                System.out.println("Р—Р°РіР°РґР°РЅРЅРѕРµ С‡РёСЃР»Рѕ Р±РѕР»СЊС€Рµ");
                 continue;
             } else {
-                System.out.println("Загаданное число меньше");
+                System.out.println("Р—Р°РіР°РґР°РЅРЅРѕРµ С‡РёСЃР»Рѕ РјРµРЅСЊС€Рµ");
                 continue;
             }
         }
