@@ -2,7 +2,7 @@ package task_02;
 
 import java.util.Scanner;
 
-public class Main {
+public class ForCycle {
     public static void main(String[] args) {
 
         System.out.println("Введите число");
