@@ -2,7 +2,7 @@ package task_01;
 
 import java.util.Scanner;
 
-public class Main {
+public class FactorialCalculator {
     public static void main(String[] args) {
 
         int result = 1;
