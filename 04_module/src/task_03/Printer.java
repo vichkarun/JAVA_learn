@@ -10,6 +10,8 @@ public class Printer {
         append("Микроэкономика", 20, "Субъекты");
         print("Очередь печати: ");
         clear();
+        System.out.println();
+        print("Очередь печати: ");
     }
 
     private static String queue = "";
@@ -20,10 +22,12 @@ public class Printer {
     private static int allPrintedPages;
 
     public Printer() {
+
         queue = "Список документов: \n ";
     }
 
     public static boolean contains(String name) {
+
         return queue.contains(name);
     }
 
@@ -59,10 +63,10 @@ public class Printer {
         System.out.println(title);
         if(queue.isEmpty()) {
             System.out.println("Нет документов на печать");
+            System.out.println("Всего страниц в печати " + pendingPageCount);
+
         }else {
             System.out.println(queue);
-            System.out.println("Всего страниц в печати " + pendingPageCount);
-            clear();
             System.out.println("Всего страниц в печати " + pendingPageCount);
         }
 
