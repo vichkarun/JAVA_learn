@@ -73,11 +73,11 @@ public class Printer {
     }
 
     public static int getPendingPageCount() {
-        pendingPageCount = numberOfPage;
         return pendingPageCount;
     }
 
     public static int getAllPrintedPages() {
+
         return allPrintedPages;
     }
 }
