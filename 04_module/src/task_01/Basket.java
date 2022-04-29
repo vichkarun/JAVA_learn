@@ -80,7 +80,6 @@ public class Basket {
         items = items + "\n" + name + " - " + price + " руб. - " + count + " шт. - " + weight + " кг.";
         totalPrice = totalPrice + count * price;
         totalWeight = totalWeight + weight;
-
     }
 
     public void clear() {
@@ -89,12 +88,13 @@ public class Basket {
         totalWeight = 0;
     }
 
-
     public int getTotalPrice() {
+
         return totalPrice;
     }
 
     public boolean contains(String name) {
+
         return items.contains(name);
     }
 
@@ -108,6 +108,7 @@ public class Basket {
         }
     }
     public double getTotalWeight() {
+
         return totalWeight;
     }
 }
