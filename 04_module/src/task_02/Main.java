@@ -3,15 +3,15 @@ package task_02;
 public class Main {
     public static void main(String[] args) {
 
-            int a = 0;
-            int b = 0;
+           int a = 5;
+           int b = 7;
 
         Arithmetic arithmeticAB = new Arithmetic(a,b);
 
-        System.out.println("Сумма чисел " + a + "и" + b + "равно" + arithmeticAB.sum());
-        System.out.println("Произведение чисел " + a + "и" + b + "равно" + arithmeticAB.multiply());
-        System.out.println("Максимальное из чисел " + a + "и" + b + "это число" + arithmeticAB.max());
-        System.out.println("Минимальное из чисел " + a + "и" + b + "это число" + arithmeticAB.min());
+        System.out.println("РЎСѓРјРјР° С‡РёСЃРµР» " + a + " Рё " + b + " СЂР°РІРЅР° " + arithmeticAB.sum());
+        System.out.println("РџСЂРѕРёР·РІРµРґРµРЅРёРµ С‡РёСЃРµР» " + a + " Рё " + b + " СЂР°РІРЅРѕ " + arithmeticAB.multiply());
+        System.out.println("РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ РёР· С‡РёСЃРµР» " + a + " Рё " + b + " - СЌС‚Рѕ С‡РёСЃР»Рѕ " + arithmeticAB.max());
+        System.out.println("РњРёРЅРёРјР°Р»СЊРЅРѕРµ РёР· С‡РёСЃРµР» " + a + " Рё " + b + " - СЌС‚Рѕ С‡РёСЃР»Рѕ " + arithmeticAB.min());
 
     }
 }
