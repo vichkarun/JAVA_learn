@@ -4,22 +4,23 @@ import javax.swing.plaf.IconUIResource;
 
 public class Printer {
 
-
-
     public static void main(String[] args) {
-        append("Экономическая теория",50, "Основные школы");
-        append("Микроэкономика", 20, "Субъекты");
-        print("Очередь печати:");
 
+        append("Р­РєРѕРЅРѕРјРёС‡РµСЃРєР°СЏ С‚РµРѕСЂРёСЏ",50, "РћСЃРЅРѕРІРЅС‹Рµ С€РєРѕР»С‹");
+        append("РњРёРєСЂРѕСЌРєРѕРЅРѕРјРёРєР°", 20, "РЎСѓР±СЉРµРєС‚С‹");
+        print("РћС‡РµСЂРµРґСЊ РїРµС‡Р°С‚Рё: ");
+        clear();
     }
+
     private static String queue = "";
 
-    private static int pendingPageCount;
-    private static int numberOfDocument;
+    private static int pendingPageCount = 0;
+    private static int numberOfPage = 0;
+    private static int numberOfDocument = 0;
     private static int allPrintedPages;
 
     public Printer() {
-        queue = "Список документов: ";
+        queue = "РЎРїРёСЃРѕРє РґРѕРєСѓРјРµРЅС‚РѕРІ: \n ";
     }
 
     public static boolean contains(String name) {
@@ -28,36 +29,47 @@ public class Printer {
 
     public void append(String name) {
         append(name, 1);
+        numberOfDocument++;
     }
 
-    public void append(String name, int pendingPageCount) {
-        append(name, pendingPageCount, "");
+    public void append(String name, int numberOfPage) {
+        append(name, numberOfPage, "");
+        numberOfDocument++;
+        pendingPageCount = pendingPageCount + numberOfPage;
+
     }
 
-    public static void append(String name, int pendingPageCount, String topic) {
+    public static void append(String name, int numberOfPage, String topic) {
         boolean error = false;
         if(contains(name)) {
             return;
         }
-        pendingPageCount = pendingPageCount * numberOfDocument;
-        queue = queue + "\n" + name + " - " + topic + " - " + pendingPageCount + "стр.";
+        numberOfDocument++;
+        pendingPageCount = pendingPageCount + numberOfPage;
+        queue = queue + name + " - РўРµРјР°: " + topic + " - " + numberOfPage + " СЃС‚СЂ." + "\n";
     }
 
     public static void clear() {
         queue = "";
+        pendingPageCount = 0;
     }
+
 
     public static void print(String title) {
         System.out.println(title);
         if(queue.isEmpty()) {
-            System.out.println("Нет документов на печать");
+            System.out.println("РќРµС‚ РґРѕРєСѓРјРµРЅС‚РѕРІ РЅР° РїРµС‡Р°С‚СЊ");
         }else {
             System.out.println(queue);
+            System.out.println("Р’СЃРµРіРѕ СЃС‚СЂР°РЅРёС† РІ РїРµС‡Р°С‚Рё " + pendingPageCount);
+            clear();
+            System.out.println("Р’СЃРµРіРѕ СЃС‚СЂР°РЅРёС† РІ РїРµС‡Р°С‚Рё " + pendingPageCount);
         }
-        clear();
+
     }
 
     public static int getPendingPageCount() {
+        pendingPageCount = numberOfPage;
         return pendingPageCount;
     }
 
