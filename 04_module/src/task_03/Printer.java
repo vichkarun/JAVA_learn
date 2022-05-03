@@ -23,7 +23,7 @@ public class Printer {
 
     public Printer() {
 
-        queue = "Список документов: \n ";
+        queue = "Список документов: ";
     }
 
     public static boolean contains(String name) {
