@@ -2,12 +2,15 @@ package task_01;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Информация о системе");
-        System.out.print("Операционная система: ");
+
+        System.out.println("РРЅС„РѕСЂРјР°С†РёСЏ Рѕ СЃРёСЃС‚РµРјРµ");
+        System.out.print("РћРїРµСЂР°С†РёРѕРЅРЅР°СЏ СЃРёСЃС‚РµРјР°: ");
         System.out.println(System.getProperty("os.name") + " " + System.getProperty("os.version"));
-        System.out.print("Количество ядер процессора: ");
+        System.out.print("РљРѕР»РёС‡РµСЃС‚РІРѕ СЏРґРµСЂ РїСЂРѕС†РµСЃСЃРѕСЂР°: ");
         System.out.println(Runtime.getRuntime().availableProcessors());
-        System.out.print("Количество памяти, доступной JVM: ");
+        System.out.print("РљРѕР»РёС‡РµСЃС‚РІРѕ РїР°РјСЏС‚Рё, РґРѕСЃС‚СѓРїРЅРѕР№ JVM: ");
         System.out.println(Runtime.getRuntime().maxMemory() / 1024 / 1024 + "Mb");
     }
+
 }
+
