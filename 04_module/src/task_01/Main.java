@@ -7,6 +7,7 @@ public class Main {
         basket.add("Milk", 40);
         basket.add("Apple",150,1,1.200);
         basket.add("Eggs",100,2,0.3);
+
         basket.print("Товары: ");
         basket.clear();
         System.out.println();
