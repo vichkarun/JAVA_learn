@@ -80,8 +80,9 @@ public class CargoInformation {
     public String toString() {
         return "Информация о грузе: " + "\n" + "\n" + "Адрес: " + deliveryAddress + "\n" + dimensions.toString()
                 + "\n" + "Вес - " + weight + " кг " + "\n" + "Регистрационный номер: "
-                + registrationNumber + "\n" + "Переворачивать груз: " + flip
-                + "\n" + "Хрупкий груз: " + fragile;
+                + registrationNumber + "\n" + "Переворачивать груз: " + (flip ? "Да" : "Нет")
+                + "\n" + "Хрупкий груз: " + (fragile ? "Да" : "Нет");
+
     }
 
 }
