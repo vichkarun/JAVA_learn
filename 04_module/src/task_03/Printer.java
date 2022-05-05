@@ -9,9 +9,10 @@ public class Printer {
         append("Экономическая теория",50, "Основные школы");
         append("Микроэкономика", 20, "Субъекты");
         print("Очередь печати: ");
-        clear();
         System.out.println();
         print("Очередь печати: ");
+
+        System.out.println(allPrintedPages);
     }
 
     private static String queue = "";
@@ -63,11 +64,12 @@ public class Printer {
         System.out.println(title);
         if(queue.isEmpty()) {
             System.out.println("Нет документов на печать");
-            System.out.println("Всего страниц в печати " + pendingPageCount);
 
         }else {
+            System.out.println("Всего страниц в очереди на печать: " + getPendingPageCount());
             System.out.println(queue);
-            System.out.println("Всего страниц в печати " + pendingPageCount);
+            allPrintedPages = allPrintedPages + getAllPrintedPages();
+            clear();
         }
 
     }
