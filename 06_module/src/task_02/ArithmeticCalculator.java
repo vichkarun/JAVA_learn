@@ -5,11 +5,6 @@ import static task_02.Operation.*;
 public class ArithmeticCalculator{
 
 
-    public int x;
-    public int y;
-
-    public ArithmeticCalculator() {
-    }
 
     public void calculate(Operation operation, int x, int y) {
         if(operation == ADD) {
