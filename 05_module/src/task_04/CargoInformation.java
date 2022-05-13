@@ -20,6 +20,7 @@ public class CargoInformation {
     }
 
     public Dimensions getDimensions() {
+
         return dimensions;
     }
 
