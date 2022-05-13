@@ -4,16 +4,16 @@ public class Main {
     public static void main(String[] args) {
 
         Basket basket = new Basket();
-        basket.add("Молоко", 150, 5);
+        basket.add("РњРѕР»РѕРєРѕ", 150, 5);
         basket.add("Cookie",85,2);
         basket.add("Sugar",94,4);
 
-        System.out.println("Количество созданных корзин - " + Basket.getCount());
-        System.out.println("Общее количество всех товаров в корзинах - " + Basket.getTotalCountForAllBaskets());
-        System.out.println("Общая стоимость всех товаров в корзинах - " + Basket.getTotalPriceForAllBaskets() + " руб.");
+        System.out.println("РљРѕР»РёС‡РµСЃС‚РІРѕ СЃРѕР·РґР°РЅРЅС‹С… РєРѕСЂР·РёРЅ - " + Basket.getCount());
+        System.out.println("РћР±С‰РµРµ РєРѕР»РёС‡РµСЃС‚РІРѕ РІСЃРµС… С‚РѕРІР°СЂРѕРІ РІ РєРѕСЂР·РёРЅР°С… - " + Basket.getTotalCountForAllBaskets());
+        System.out.println("РћР±С‰Р°СЏ СЃС‚РѕРёРјРѕСЃС‚СЊ РІСЃРµС… С‚РѕРІР°СЂРѕРІ РІ РєРѕСЂР·РёРЅР°С… - " + Basket.getTotalPriceForAllBaskets() + " СЂСѓР±.");
         System.out.println();
-        System.out.println("Средняя цена товара во всех корзинах - " + Basket.averagePriceForAllItems);
-        System.out.println("Средняя стоимость корзины - " + Basket.averageCostForBasket);
+        System.out.println("РЎСЂРµРґРЅСЏСЏ С†РµРЅР° С‚РѕРІР°СЂР° РІРѕ РІСЃРµС… РєРѕСЂР·РёРЅР°С… - " + Basket.averagePriceForAllItems);
+        System.out.println("РЎСЂРµРґРЅСЏСЏ СЃС‚РѕРёРјРѕСЃС‚СЊ РєРѕСЂР·РёРЅС‹ - " + Basket.averageCostForBasket);
 
     }
 }
