@@ -13,6 +13,9 @@ public class Main {
 
         System.out.println(computer1);
 
+        System.out.println();
+        System.out.println("Вес комплектующих: " + computer1.sumWeight() + " гр.");
+
 
 
     }

@@ -87,6 +87,10 @@ public class Computer {
                 display, keyboard);
     }
 
+    public double sumWeight() {
+        return processor.getWeight() + RAM.getWeight() + storageOfInformation.getWeight() + display.getWeight() + keyboard.getWeight();
+    }
+
     public String toString() {
         return "Компьютер: " + "\n" + "\n" + processor.toString() + "\n" + RAM.toString() + "\n" +
                 storageOfInformation.toString() + "\n" + display.toString() + "\n" + keyboard.toString();
