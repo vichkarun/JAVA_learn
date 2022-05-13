@@ -2,13 +2,13 @@ package task_03;
 
 public class Computer {
 
-    public Processor processor;
-    public RAM RAM;
-    public StorageOfInformation storageOfInformation;
-    public Display display;
-    public Keyboard keyboard;
-    public final String vendor;
-    public final String name;
+    private Processor processor;
+    private RAM RAM;
+    private StorageOfInformation storageOfInformation;
+    private Display display;
+    private Keyboard keyboard;
+    private final String vendor;
+    private final String name;
 
     public Computer(String name, String vendor, Processor processor, RAM RAM, StorageOfInformation storageOfInformation,
                     Display display, Keyboard keyboard) {
