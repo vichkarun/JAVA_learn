@@ -12,8 +12,7 @@ public class GeometryCalculator {
     public static double getCircleArea(double radius) {
         if (radius > 0) {
             return Math.PI * Math.pow(radius, 2);
-        }
-        else return -1;
+        }  else return -1;
     }
 
     public static boolean trianglePossible(double a, double b, double c) {

@@ -9,6 +9,5 @@ public class Main {
         System.out.println(GeometryCalculator.getTriangleArea(3,4,2));
         System.out.println(GeometryCalculator.getSphereVolume(2));
         }
-
     }
 
